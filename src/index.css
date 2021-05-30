@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+svg {
+  width: 100%;
+}
+.text--line {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+
+  /* stroke: black;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 0;
+  fill-opacity: 1;
+  fill: black; */
+}
+
+#outline {
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 0;
+  /* animation-name: outline;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; */
+}
+
+#fill {
+  fill-opacity: 0;
+  fill: white;
+  /* animation-name: fill; */
+  transition: fill-opacity 0.1s ease-in;
+  /* animation-duration: 0.5s; */
+  /* animation-timing-function: ease-in; */
+  animation-fill-mode: forwards;
+  /* animation-delay: 1s; */
+}
+
+#fill:hover {
+  fill-opacity: 1;
+}
+
+/* @keyframes outline {
+  from {
+    stroke-dashoffset: 100%;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+} */
+/* @keyframes fill {
+  from {
+    fill-opacity: 0;
+  }
+
+  to {
+    fill-opacity: 1;
+  }
+} */
+
+.pages-container {
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+}
+
+.pages-container > section {
+  border: 10px solid red;
+  scroll-snap-align: start;
+}
