@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply font-ptSans;
+}
+
 svg {
   width: 100%;
 }
@@ -20,7 +24,7 @@ svg {
 #outline {
   fill: none;
   stroke: white;
-  stroke-width: 2;
+  stroke-width: 1;
   stroke-dasharray: 100%;
   stroke-dashoffset: 0;
   /* animation-name: outline;
@@ -63,7 +67,7 @@ svg {
   }
 } */
 
-.pages-container {
+/* .pages-container {
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
 }
@@ -71,4 +75,8 @@ svg {
 .pages-container > section {
   border: 10px solid red;
   scroll-snap-align: start;
+} */
+
+.page-title {
+  -webkit-text-stroke: 1px #fff;
 }
