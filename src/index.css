@@ -80,3 +80,17 @@ svg {
 .page-title {
   -webkit-text-stroke: 1px #fff;
 }
+
+.new-spotify {
+  @apply font-nunito;
+}
+
+.custom-hidden-scroll {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-x: scroll;
+}
+
+.hidden-scroll::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}

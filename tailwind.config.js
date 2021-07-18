@@ -11,6 +11,7 @@ module.exports = {
       },
       fontFamily: {
         ptSans: ['PT Sans', ...defaultTheme.fontFamily.sans],
+        nunito: ['Nunito', ...defaultTheme.fontFamily.sans],
       },
     },
   },
